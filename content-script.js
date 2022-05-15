@@ -1,3 +1,6 @@
+// All the DOM manipulation logic takes place in here.
+// Cleans all <video> and <source> elements, then swaps <img> sources.
+
 /** All source elements on the page. */
 const originalEls = {
   imgs: document.getElementsByTagName('img'),
