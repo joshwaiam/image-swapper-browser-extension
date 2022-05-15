@@ -6,6 +6,7 @@ Firefox extension for swapping all images on a page. Currently only swaps to ran
 
 This is still in development, so it can only be used in a single browser session.
 
+1. Download this repo to your local machine.
 1. Type `about:debugging` in the address bar.
 1. Click on the `This Firefox` link.
 1. Click the `Load Temporary Addon` button.
