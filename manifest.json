@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Image Swapper",
+  "version": "1.0",
+
+  "description": "Swaps all images on a page with another image.",
+
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+
+  "permissions": ["activeTab"],
+
+  "browser_action": {
+    "default_icon": {
+      "19": "icons/icon-19.png",
+      "38": "icons/icon-38.png"
+    },
+    "default_title": "Image Swapper!"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
