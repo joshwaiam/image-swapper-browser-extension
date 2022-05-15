@@ -12,6 +12,8 @@ This is still in development, so it can only be used in a single browser session
 1. Browse to the `manifest.json` file in the extension folder.
 1. You can now click the Camera icon in the extensions section of the browser.
 
+Try it on a news article, [such as this Wired article!](https://www.wired.com/story/terra-luna-collapse/)
+
 ## Credits
 
 [Camera icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/camera)
