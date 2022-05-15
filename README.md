@@ -1,2 +1,17 @@
-## Camera icon reference
-<a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Camera icons created by Freepik - Flaticon</a>
+# README
+
+Firefox extension for swapping all images on a page. Currently only swaps to random cat pictures.
+
+## Usage
+
+This is still in development, so it can only be used in a single browser session.
+
+1. Type `about:debugging` in the address bar.
+1. Click on the `This Firefox` link.
+1. Click the `Load Temporary Addon` button.
+1. Browse to the `manifest.json` file in the extension folder.
+1. You can now click the Camera icon in the extensions section of the browser.
+
+## Credits
+
+[Camera icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/camera)
