@@ -1,8 +1,14 @@
 /** All source elements on the page. */
-const originalElements = {
+const originalEls = {
   imgs: document.getElementsByTagName('img'),
   sources: document.getElementsByTagName('source'),
   videos: document.getElementsByTagName('video'),
+}
+/** All original source image paths. */
+const originalImgSrcs = []
+for (let i = 0; i < originalEls.imgs.length; i++) {
+  const imgEl = originalEls.imgs[i]
+  originalImgSrcs.push(imgEl.src)
 }
 
 /**
@@ -36,20 +42,20 @@ function replaceImageEls(imgEls) {
     const imgEl = imgEls[i]
     const width = imgEl.width
     const height = imgEl.height
-    const url = `http://placekitten.com/${width}/${height}`
+    const newPath = `http://placekitten.com/${width}/${height}`
 
     // If the image is already assigned, skip it
     if (imgEl.src.indexOf('placekitten.com') !== -1) {
       continue
     }
 
-    if (imgEl.src) {
-      imgEl.src = url
-    } else {
-      imgEl.style.backgroundImage = `url(${url})`
-    }
-
     imgEl.srcset = ''
+
+    if (imgEl.src) {
+      imgEl.src = newPath
+    } else {
+      imgEl.style.backgroundImage = `url(${newPath})`
+    }
   }
 }
 
@@ -57,7 +63,7 @@ function replaceImageEls(imgEls) {
  * Apply the image swap effect.
  */
 function applyEffect() {
-  const { imgs, sources, videos } = originalElements
+  const { imgs, sources, videos } = originalEls
 
   cleanSourceEls(sources)
   cleanVideoEls(videos)
