@@ -63,7 +63,8 @@ function replaceImageEls(imgEls) {
 }
 
 /**
- * Apply the image swap effect.
+ * Main function that runs when the script is injected,
+ * and then each 1000ms after that.
  */
 function applyEffect() {
   const { imgs, sources, videos } = originalEls
